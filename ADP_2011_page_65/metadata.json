@@ -1,1 +1,30 @@
 
+{
+  "table_id": "ADP_2011_page_65",
+  "tamper_type": "total_error",
+  "reasoning_type": [
+    "arithmetic"
+  ],
+  "tampered_cells": [
+    {
+      "row": 4,
+      "column": "2010",
+      "original_value": "$ 39.8",
+      "tampered_value": "$ 39.7"
+    }
+  ],
+  "ground_truth_explanation": {
+    "what_was_changed": "The long-term portion for 2010 was changed from $39.8 to $39.7.",
+    "why_it_is_incorrect": "The long-term portion should be calculated as the total minus the current portion. The correct value is $42.6 - $2.8 = $39.8.",
+    "verification_rule": "Long-term portion = Total - Current portion",
+    "correct_value": "$39.8"
+  },
+  "plausible_cause": "A clerical error or rounding issue during data entry.",
+  "model_target": {
+    "integrity_status": "tampered",
+    "affected_cells": [
+      "4,2010"
+    ],
+    "expected_explanation": "The long-term portion for 2010 is incorrect. It should be $39.8, but it is listed as $39.7."
+  }
+}
