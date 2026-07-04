@@ -1,0 +1,29 @@
+{
+  "table_id": "ADP_2010_page_61",
+  "tamper_type": "total_error",
+  "reasoning_type": [
+    "arithmetic"
+  ],
+  "tampered_cells": [
+    {
+      "row": 6,
+      "column": "Amount",
+      "original_value": "$ 39.8",
+      "tampered_value": "$ 39.0"
+    }
+  ],
+  "ground_truth_explanation": {
+    "what_was_changed": "The total amount was changed from $39.8 to $39.0.",
+    "why_it_is_incorrect": "The sum of the individual amounts ($1.7 + $17.1 + $1.8 + $1.8 + $1.8 + $15.6) should be $39.8, but it is incorrectly listed as $39.0.",
+    "verification_rule": "The total amount should be the sum of all individual amounts.",
+    "correct_value": "$39.8"
+  },
+  "plausible_cause": "A simple arithmetic mistake or data entry error could have caused this discrepancy.",
+  "model_target": {
+    "integrity_status": "tampered",
+    "affected_cells": [
+      "6,Amount"
+    ],
+    "expected_explanation": "The total amount is incorrect and should be $39.8 instead of $39.0."
+  }
+}
