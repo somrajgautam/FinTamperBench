@@ -1,0 +1,29 @@
+{
+  "table_id": "ADP_2008_page_58",
+  "tamper_type": "arithmetic_error",
+  "reasoning_type": [
+    "arithmetic"
+  ],
+  "tampered_cells": [
+    {
+      "row": 3,
+      "column": "Net amount recognized",
+      "original_value": "$ 109.4",
+      "tampered_value": "$ 110.4"
+    }
+  ],
+  "ground_truth_explanation": {
+    "what_was_changed": "The Net amount recognized for June 30, 2008 was changed from $109.4 to $110.4.",
+    "why_it_is_incorrect": "The Net amount recognized should be calculated as the sum of Noncurrent assets minus Current liabilities minus Noncurrent liabilities. The correct calculation is 180.6 - 3.6 - 67.6 = 109.4, not 110.4.",
+    "verification_rule": "Net amount recognized = Noncurrent assets - Current liabilities - Noncurrent liabilities",
+    "correct_value": "$ 109.4"
+  },
+  "plausible_cause": "A simple arithmetic mistake during the calculation of the Net amount recognized.",
+  "model_target": {
+    "integrity_status": "tampered",
+    "affected_cells": [
+      "Net amount recognized (June 30, 2008)"
+    ],
+    "expected_explanation": "The Net amount recognized for June 30, 2008 is incorrect due to an arithmetic error. The correct value should be $109.4."
+  }
+}
