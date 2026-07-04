@@ -1,0 +1,18 @@
+{
+  "table_id": "ADP_2010_page_65",
+  "tamper_type": "none",
+  "reasoning_type": [],
+  "tampered_cells": [],
+  "ground_truth_explanation": {
+    "what_was_changed": "Nothing. The table is identical to the source.",
+    "why_it_is_incorrect": "N/A",
+    "verification_rule": "N/A",
+    "correct_value": "N/A"
+  },
+  "plausible_cause": "N/A",
+  "model_target": {
+    "integrity_status": "clean",
+    "affected_cells": [],
+    "expected_explanation": "The table has not been tampered with. All values are consistent with the source document."
+  }
+}
