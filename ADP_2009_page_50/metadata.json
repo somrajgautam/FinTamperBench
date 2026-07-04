@@ -1,0 +1,29 @@
+{
+  "table_id": "ADP_2009_page_50",
+  "tamper_type": "total_error",
+  "reasoning_type": [
+    "arithmetic"
+  ],
+  "tampered_cells": [
+    {
+      "row": 4,
+      "column": "2007",
+      "original_value": "$ 43.8",
+      "tampered_value": "$ 43.9"
+    }
+  ],
+  "ground_truth_explanation": {
+    "what_was_changed": "The total for the year 2007 was changed from $43.8 to $43.9.",
+    "why_it_is_incorrect": "The total should be the sum of the individual components for the year 2007, which is $42.2 + $49.0 - $62.0 + $14.6 = $43.8.",
+    "verification_rule": "Total = Service cost + Interest cost + Expected return on plan assets + Net amortization and deferral",
+    "correct_value": "$ 43.8"
+  },
+  "plausible_cause": "A clerical error or rounding issue may have caused the discrepancy in the total for the year 2007.",
+  "model_target": {
+    "integrity_status": "tampered",
+    "affected_cells": [
+      "4,2007"
+    ],
+    "expected_explanation": "The total for the year 2007 is incorrect. It should be $43.8, but it is listed as $43.9."
+  }
+}
