@@ -1,0 +1,29 @@
+{
+  "table_id": "ADP_2008_page_59",
+  "tamper_type": "total_error",
+  "reasoning_type": [
+    "arithmetic"
+  ],
+  "tampered_cells": [
+    {
+      "row": 3,
+      "column": "Amount",
+      "original_value": "$ (63.1)",
+      "tampered_value": "$ (62.1)"
+    }
+  ],
+  "ground_truth_explanation": {
+    "what_was_changed": "The total amount was changed from $ (63.1) to $ (62.1).",
+    "why_it_is_incorrect": "The total should be the sum of the individual components, which is $ (61.6) + $ (0.5) + $ (1.0) = $ (63.1).",
+    "verification_rule": "Total = Net actuarial and other loss, net of tax + Prior service cost, net of tax + Transition obligation, net of tax",
+    "correct_value": "$ (63.1)"
+  },
+  "plausible_cause": "A clerical error during data entry or a miscalculation in the total.",
+  "model_target": {
+    "integrity_status": "tampered",
+    "affected_cells": [
+      "3, Amount"
+    ],
+    "expected_explanation": "The total amount is incorrect and should be $ (63.1) instead of $ (62.1)."
+  }
+}
